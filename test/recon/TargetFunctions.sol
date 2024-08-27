@@ -38,4 +38,10 @@ abstract contract TargetFunctions is
             t(_after.counter_number == newNumber, "number != newNumber");
         }
     }
+
+    function counter_governanceCanary() public {
+        try counter.governanceCanary() {} catch {
+            t(false, "Canary Broken");
+        }
+    }
 }
