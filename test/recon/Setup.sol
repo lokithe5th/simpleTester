@@ -9,6 +9,6 @@ abstract contract Setup is BaseSetup {
 
     function setup() internal virtual override {
         counter = new Counter();
-        /// {RECON-FLAG}
+        /// {RECON-FLAG};
     }
 }
