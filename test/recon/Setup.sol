@@ -3,6 +3,7 @@ pragma solidity ^0.8.0;
 
 import {BaseSetup} from "@chimera/BaseSetup.sol";
 import "src/Counter.sol";
+import {vm} from "@chimera/Hevm.sol";
 
 abstract contract Setup is BaseSetup {
     Counter counter;
