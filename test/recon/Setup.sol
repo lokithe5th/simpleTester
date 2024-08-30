@@ -11,7 +11,8 @@ abstract contract Setup is BaseSetup {
     function setup() internal virtual override {
         counter = new Counter();
         /// RECON-GOV-CHANGE;
-        /// RECON-TIMESTAMP;
+        vm.warp(1725003701);
+        vm.roll(20639918);
         /// RECON-BLOCK;
     }
 }
